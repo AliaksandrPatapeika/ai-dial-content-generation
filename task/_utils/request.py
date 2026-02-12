@@ -3,9 +3,9 @@
 def print_request(endpoint: str, request_data: dict, headers: dict):
     """Pretty print the request details."""
     print("\n" + "="*50 + " REQUEST " + "="*50)
-    print(f"🔗 Endpoint: {endpoint}")
+    print(f"Endpoint: {endpoint}")
 
-    print("\n📋 Headers:")
+    print("\nHeaders:")
     safe_headers = headers.copy()
     if "api-key" in safe_headers:
         api_key = safe_headers["api-key"]
