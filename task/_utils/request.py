@@ -14,7 +14,7 @@ def print_request(endpoint: str, request_data: dict, headers: dict):
     for key, value in safe_headers.items():
         print(f"  {key}: {value}")
 
-    print("\n📝 Request Body:")
+    print("\nRequest Body:")
     messages = request_data.get("messages", [])
     other_params = {k: v for k, v in request_data.items() if k != "messages"}
 
